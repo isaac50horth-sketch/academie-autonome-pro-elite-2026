@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Académie Autonome Pro | Formations IA & Business Digital</title>
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --card: #12121a;
+            --accent: #d4af37;
+            --accent2: #f0e68c;
+            --text: #e8e8e8;
+            --muted: #a0a0a0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { padding: 20px 0; border-bottom: 1px solid #222; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+        .btn { display: inline-block; background: var(--accent); color: #000; padding: 12px 28px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+        .btn:hover { background: var(--accent2); transform: translateY(-2px); }
+        .hero { text-align: center; padding: 100px 0 80px; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; background: linear-gradient(90deg, var(--accent), #fff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.25rem; color: var(--muted); max-width: 700px; margin: 0 auto 30px; }
+        .section { padding: 80px 0; }
+        .section h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; color: var(--accent); }
+        .courses { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .course-card { background: var(--card); padding: 30px; border-radius: 16px; border: 1px solid #222; transition: transform 0.3s; }
+        .course-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .course-card h3 { font-size: 1.5rem; margin-bottom: 15px; }
+        .price { font-size: 2rem; color: var(--accent); font-weight: 700; margin: 20px 0; }
+        .features { list-style: none; margin: 20px 0; }
+        .features li { padding: 8px 0; border-bottom: 1px solid #222; }
+        .features li:before { content: "✓ "; color: var(--accent); }
+        footer { text-align: center; padding: 40px 0; border-top: 1px solid #222; color: var(--muted); }
+        .sub-highlight { background: linear-gradient(135deg, #1a1a2e, #16213e); border: 2px solid var(--accent); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Académie Autonome Pro</div>
+                <a href="#pricing" class="btn">Commencer</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Construis un Business Digital Autonome avec l'IA</h1>
+            <p>Formations professionnelles, systèmes de revenus récurrents et stratégies éprouvées pour freelances et entrepreneurs qui veulent des revenus en boucle sans dépendre de leur temps.</p>
+            <a href="#pricing" class="btn">Découvrir les formations</a>
+        </div>
+    </section>
+
+    <section class="section" id="courses">
+        <div class="container">
+            <h2>Formations Professionnelles</h2>
+            <div class="courses">
+                <div class="course-card">
+                    <h3>Maîtrise de l'IA pour Freelances & Entrepreneurs</h3>
+                    <p>Apprends à utiliser l'IA pour automatiser, créer du contenu, optimiser tes process et scaler ton activité 10x plus vite.</p>
+                    <ul class="features">
+                        <li>Workflows IA prêts à l'emploi</li>
+                        <li>Prompts experts + templates</li>
+                        <li>Cas pratiques réels</li>
+                        <li>Mises à jour à vie</li>
+                    </ul>
+                    <div class="price">197€</div>
+                    <a href="https://buy.stripe.com/test_placeholder1" class="btn">Acheter la formation</a>
+                </div>
+                <div class="course-card">
+                    <h3>Systèmes de Revenus Récurrents</h3>
+                    <p>Crée des produits digitaux et des abonnements qui génèrent des revenus passifs et prévisibles mois après mois.</p>
+                    <ul class="features">
+                        <li>Modèles d'offres high-ticket</li>
+                        <li>Architecture de site + funnel</li>
+                        <li>Stratégies d'acquisition</li>
+                        <li>Systèmes d'automatisation</li>
+                    </ul>
+                    <div class="price">297€</div>
+                    <a href="https://buy.stripe.com/test_placeholder2" class="btn">Acheter la formation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="pricing">
+        <div class="container">
+            <h2>Abonnement Académie Autonome Pro</h2>
+            <div class="course-card sub-highlight" style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <h3>Accès Complet + Communauté</h3>
+                <p>Toutes les formations actuelles et futures, mises à jour continues, templates exclusifs et accès à la communauté privée.</p>
+                <ul class="features" style="text-align: left;">
+                    <li>Toutes les formations débloquées</li>
+                    <li>Nouvelles formations chaque mois</li>
+                    <li>Communauté Discord privée</li>
+                    <li>Support prioritaire</li>
+                    <li>Ressources et templates exclusifs</li>
+                </ul>
+                <div class="price">29€/mois</div>
+                <a href="https://buy.stripe.com/test_placeholder_sub" class="btn">Rejoindre l'abonnement</a>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: var(--muted);">Annulable à tout moment. Accès immédiat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi cette académie ?</h2>
+            <div class="courses">
+                <div class="course-card">
+                    <h3>Contenu de Qualité Professionnelle</h3>
+                    <p>Formations structurées, actionnables, avec des résultats mesurables. Pas de blabla, que du concret qui vaut le prix.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Revenus en Boucle</h3>
+                    <p>Modèle conçu pour générer des revenus récurrents via abonnements et produits digitaux scalables.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Autonomie & Évolution</h3>
+                    <p>Systèmes qui apprennent et s'améliorent. Tu construis un actif qui travaille pour toi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Académie Autonome Pro. Tous droits réservés.</p>
+            <p style="margin-top: 10px;">Paiements sécurisés par Stripe. Accès délivré immédiatement après paiement.</p>
+        </div>
+    </footer>
+</body>
+</html>
